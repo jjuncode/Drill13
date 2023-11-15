@@ -114,7 +114,7 @@ class Zombie:
             return BehaviorTree.FAIL
 
     def is_ball_many(self):
-        if self.ball_count > play_mode.boy.ball_count:
+        if self.ball_count >= play_mode.boy.ball_count:
             return BehaviorTree.SUCCESS
         else :
             return BehaviorTree.FAIL
